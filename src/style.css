@@ -38,6 +38,11 @@ h3 {
   margin-bottom: -10px;
 }
 
+h4 {
+  font-weight: bold;
+  margin-top: -15px;
+}
+
 img {
   height: auto;
   width: 500px;
@@ -70,11 +75,13 @@ p {
 }
 .navigation-link {
   padding-top: 20px;
+  margin-top: 20px;
   text-align: center;
 }
 
 .about-link,
-.portfolio-link {
+.portfolio-link,
+.contact-link {
   border: 2px solid var(--secondary-color);
   border-radius: 40px;
   padding: 15px 20px;
@@ -102,16 +109,83 @@ i.fa-brands {
   padding: 10px;
 }
 
-.about-section,
-.portfolio-section h3 {
+.content-container h3 {
   text-align: center;
 }
 
-.about-section p {
+.content-container p {
   font-size: 20px;
   padding: 20px 5px;
   line-height: 1.5;
   text-align: justify;
+}
+
+.card {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.card:hover {
+  color: white;
+  background-color: black;
+}
+
+.card img {
+  width: 150px;
+  margin: 15px auto;
+}
+
+.card-body p {
+  font-size: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: -15px;
+  line-height: normal;
+  text-align: justify;
+}
+
+.mp-link a {
+  margin-top: -20px;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mp-link a:hover {
+  color: white;
+}
+
+.tmb-link a {
+  margin-top: -20px;
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tmb-link a:hover {
+  color: white;
+}
+
+.fed-link a {
+  margin-top: -20px;
+  color: turquoise;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fed-link a:hover {
+  color: white;
+}
+
+.events-link,
+.prod-link,
+.docu-link,
+.digitalmarketing-link,
+.design-link,
+.personal-app,
+.weather-app,
+.portfolio-app {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 @media (max-width: 576px) {
@@ -136,8 +210,13 @@ i.fa-brands {
     padding-right: 40px;
   }
 
-  .about-section p {
+  .content-container p {
     font-size: 16px;
     padding: 16px 24px;
+  }
+
+  .card {
+    margin-right: 40px;
+    margin-left: 40px;
   }
 }
