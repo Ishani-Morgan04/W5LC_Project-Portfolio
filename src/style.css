@@ -39,6 +39,7 @@ h3 {
 }
 
 h4 {
+  text-align: center;
   font-weight: bold;
   margin-top: -15px;
 }
@@ -101,12 +102,17 @@ p {
   color: white;
 }
 
-i.fa-brands {
+i.fa-brands,
+i.fa {
   font-family: fontawesome !important;
   font-size: 40px;
   color: black;
   font-style: normal;
-  padding: 10px;
+  padding: 30px;
+}
+
+i.fa {
+  padding-top: 10px;
 }
 
 .content-container h3 {
@@ -188,6 +194,11 @@ i.fa-brands {
   font-weight: bold;
 }
 
+.network img {
+  height: auto;
+  width: 800px;
+}
+
 @media (max-width: 576px) {
   body {
     padding: 60px 20px;
@@ -218,5 +229,17 @@ i.fa-brands {
   .card {
     margin-right: 40px;
     margin-left: 40px;
+  }
+
+  .network img {
+    height: auto;
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .contact p {
+    margin-right: 30px;
+    margin-left: 30px;
   }
 }
