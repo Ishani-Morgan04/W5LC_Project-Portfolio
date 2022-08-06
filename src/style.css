@@ -66,8 +66,19 @@ p {
   background-color: var(--primary-color);
 }
 
+.nav-link.active {
+  color: red !important;
+  font-weight: bold;
+  transition: all 100ms ease-in-out;
+}
+
 .nav-link {
   color: var(--secondary-color) !important;
+}
+
+.nav-link:hover {
+  color: turquoise !important;
+  font-weight: bold;
 }
 
 .navbar-brand {
@@ -106,7 +117,7 @@ i.fa-brands,
 i.fa {
   font-family: fontawesome !important;
   font-size: 40px;
-  color: black;
+  color: var(--primary-color);
   font-style: normal;
   padding: 30px;
 }
@@ -121,7 +132,7 @@ i.fa {
 
 .content-container p {
   font-size: 20px;
-  padding: 20px 5px;
+  padding: 25px 5px;
   line-height: 1.5;
   text-align: justify;
 }
@@ -131,8 +142,8 @@ i.fa {
 }
 
 .card:hover {
-  color: white;
-  background-color: black;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .card img {
@@ -149,37 +160,30 @@ i.fa {
   text-align: justify;
 }
 
-.mp-link a {
+.mp-link,
+.tmb-link,
+.fed-link a {
   margin-top: -20px;
-  color: red;
   text-decoration: none;
   font-weight: bold;
 }
 
-.mp-link a:hover {
-  color: white;
+.mp-link a:hover,
+.tmb-link a:hover,
+.fed-link a:hover {
+  color: var(--secondary-color);
+}
+
+.mp-link a {
+  color: red;
 }
 
 .tmb-link a {
-  margin-top: -20px;
   color: orange;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.tmb-link a:hover {
-  color: white;
 }
 
 .fed-link a {
-  margin-top: -20px;
   color: turquoise;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.fed-link a:hover {
-  color: white;
 }
 
 .events-link,
