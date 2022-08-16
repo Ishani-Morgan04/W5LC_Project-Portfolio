@@ -1,42 +1,42 @@
 :root {
   --primary-color: black;
   --secondary-color: white;
+  --main-font-family: "Nunito", sans-serif;
   --box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
 }
-body {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 80px 15px;
-  font-family: "Nunito", sans-serif;
-}
 
-h1,
-h2,
-h3 {
-  font-family: "Nunito", sans-serif;
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px;
+  padding-bottom: 2px;
+  font-family: var(--main-font-family);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 56px;
   font-weight: bolder;
   text-transform: uppercase;
-  margin-top: -10px;
+  margin-top: -25px;
+  margin-bottom: 3px;
+  color: var(--secondary-color);
 }
 
 h2 {
   font-size: 24px;
   text-transform: capitalize;
-  border: 2px solid var(--primary-color);
-  background-color: var(--primary-color);
   color: var(--secondary-color);
-  margin: 0 80px;
+  margin-bottom: 16px;
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: -10px;
+  margin-top: -30px;
+  margin-bottom: -70px;
+  color: var(--secondary-color);
 }
 
 h4 {
@@ -45,18 +45,9 @@ h4 {
   margin-top: -15px;
 }
 
-img {
+.intro img {
   height: auto;
-  width: 500px;
-}
-
-p {
-  font-size: 16px;
-  font-weight: normal;
-  margin-top: 40px;
-  padding-left: 260px;
-  padding-right: 260px;
-  text-align: center;
+  width: 950px;
 }
 
 .hero {
@@ -64,37 +55,47 @@ p {
 }
 
 .navbar-dark {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .nav-link.active {
-  color: red !important;
+  color: rgb(255, 0, 149) !important;
   font-weight: bold;
   transition: all 100ms ease-in-out;
 }
 
+.navbar-brand,
 .nav-link {
-  color: var(--secondary-color) !important;
-}
-
-.nav-link:hover {
-  color: turquoise !important;
+  color: var(--primary-color) !important;
+  font-family: var(--main-font-family);
   font-weight: bold;
 }
 
-.navbar-brand {
-  padding-right: 10px;
-  padding-left: 10px;
+.nav-link:hover {
+  color: rgb(15, 247, 7) !important;
+  font-weight: bold;
 }
+
+.name-logo {
+  width: 50px;
+  margin-top: -5px;
+  overflow: hidden;
+}
+
 .navigation-link {
-  padding-top: 20px;
-  margin-top: 20px;
+  padding-top: 8px;
+  margin-top: 5px;
   text-align: center;
 }
 
 .about-me {
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 80px;
+  margin-bottom: 70px;
+  color: var(--secondary-color);
+}
+
+.about-me:hover {
+  color: rgb(200, 255, 1);
 }
 
 .about-link,
@@ -116,8 +117,8 @@ p {
 
 .navigation-link a:hover {
   border: 2px solid var(--secondary-color);
-  background-color: var(--primary-color);
-  color: white;
+  background-color: rgb(6, 1, 75);
+  color: var(--secondary-color);
 }
 
 .content-container {
@@ -132,12 +133,14 @@ p {
 }
 
 .card {
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-top: 120px;
+  margin-bottom: 70px;
+  color: var(--primary-color);
+  background-color: rgb(255, 235, 235);
 }
 
 .card:hover {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
+  background-color: rgb(212, 249, 250);
 }
 
 .card img {
@@ -146,12 +149,13 @@ p {
 }
 
 .card-body p {
-  font-size: 16px;
+  font-size: 15px;
   padding-right: 20px;
   padding-left: 20px;
   margin-top: -15px;
   line-height: normal;
   text-align: justify;
+  color: var(--primary-color);
 }
 
 .mp-link a,
@@ -165,19 +169,19 @@ p {
 .mp-link a:hover,
 .tmb-link a:hover,
 .fed-link a:hover {
-  color: var(--secondary-color);
+  color: rgb(5, 49, 90);
 }
 
 .mp-link a {
-  color: red;
+  color: rgb(212, 24, 24);
 }
 
 .tmb-link a {
-  color: orange;
+  color: rgb(245, 94, 7);
 }
 
 .fed-link a {
-  color: turquoise;
+  color: rgb(116, 5, 207);
 }
 
 .events-link,
@@ -192,13 +196,20 @@ p {
   font-weight: bold;
 }
 
+.contact p {
+  font-size: 19px;
+}
+
 .connect {
-  margin-top: 20px;
+  margin-top: 90px;
+  margin-bottom: -50px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .network img {
-  height: auto;
-  width: 800px;
+  width: 950px;
+  margin-bottom: 12px;
 }
 
 i.fa-brands,
@@ -227,7 +238,7 @@ i.fa {
 }
 
 footer p {
-  margin-top: 5px;
+  margin-top: -2px;
   font-size: 12px;
 }
 
@@ -238,19 +249,34 @@ footer p {
 
   h1 {
     font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 
   h2 {
     font-size: 16px;
     vertical-align: middle;
-    margin-right: 35px;
-    margin-left: 35px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 
-  p {
-    font-size: 12px;
-    padding-left: 40px;
-    padding-right: 40px;
+  h3 {
+    margin-top: 15px;
+    margin-bottom: -25px;
+  }
+
+  .navbar-toggler {
+    background-color: rgb(216, 211, 211);
+    padding-top: -10px;
+    padding-bottom: -10px;
+    float: left;
+  }
+
+  .about-me {
+    margin-top: 20px;
+    margin-bottom: -25px;
+    margin-right: 30px;
+    margin-left: 30px;
   }
 
   .content-container p {
@@ -259,19 +285,21 @@ footer p {
   }
 
   .card {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-top: 40px;
+    margin-bottom: 36px;
+    padding-bottom: -30px;
   }
 
-  .network img {
-    height: auto;
-    width: 400px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .contact p {
+  .connect {
+    margin-top: 30px;
+    margin-bottom: -10px;
     margin-right: 30px;
     margin-left: 30px;
+  }
+
+  .network-links {
+    margin-top: 40px;
   }
 }
